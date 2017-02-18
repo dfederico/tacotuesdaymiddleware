@@ -81,6 +81,7 @@
   },
 
   "buildOptions": {
+    "outputName": "TacoTuesday",
     "debugType": "portable",
     "emitEntryPoint": true,
     "preserveCompilationContext": true
