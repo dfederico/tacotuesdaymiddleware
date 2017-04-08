@@ -1,15 +1,31 @@
-﻿namespace TacoTuesday.Services
+﻿using System.Collections.Generic;
+
+namespace TacoTuesday.Services
 {
     public interface ILocationService
     {
-        void Get(decimal logitude, decimal latitude);
+        List<Location> Get(decimal logitude, decimal latitude);
     }
 
     public class LocationService : ILocationService
     {
-        public void Get(decimal logitude, decimal latitude)
+        private IAuthTokenService _authTokenService;
+        public LocationService(IAuthTokenService authTokenService){
+            _authTokenService = authTokenService;
+        }
+        public List<Location> Get(decimal logitude, decimal latitude)
         {
-            
+            //1. Ensusre that we have an access token
+            var token = _authTokenService.EnsureAuthToken();
+            //2. Call the yelp api Search
+            //https://api.yelp.com/v3/businesses/search
+
+            //3. Return model for results
+            return new List<Location>{
+                new Location{
+                    LocationName = "Test"
+                }
+            };
         }
     }
 }

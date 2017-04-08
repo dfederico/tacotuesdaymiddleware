@@ -45,6 +45,7 @@ namespace WebApplication
             services.AddTransient<IEmailSender, AuthMessageSender>();
             services.AddTransient<ISmsSender, AuthMessageSender>();
             services.AddTransient<ILocationService, LocationService>();
+            services.AddTransient<IAuthTokenService, AuthTokenService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

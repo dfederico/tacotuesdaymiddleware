@@ -15,8 +15,8 @@ namespace WebApplication.Controllers.Api{
         [HttpGet]
         public IActionResult Get()
         {
-            _locationService.Get(0, 0);
-            return Content("");
+            var locations = _locationService.Get(0, 0);
+            return new OkObjectResult(locations);
         }
     }
 }
