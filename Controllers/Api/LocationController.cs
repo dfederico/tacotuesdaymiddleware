@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using System.Net;
 using TacoTuesday.Services;
 
 namespace WebApplication.Controllers.Api{
@@ -13,9 +14,13 @@ namespace WebApplication.Controllers.Api{
         }
 
         [HttpGet]
-        public IActionResult Get()
+        public IActionResult Get(decimal? logitude, decimal? latitude)
         {
-            var locations = _locationService.Get(0, 0);
+            if(!logitude.HasValue || !latitude.HasValue)
+            {
+                return new StatusCodeResult((int)HttpStatusCode.BadRequest);
+            }
+            var locations = _locationService.Get(logitude.Value, latitude.Value);
             return new OkObjectResult(locations);
         }
     }
