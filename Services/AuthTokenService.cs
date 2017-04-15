@@ -1,16 +1,36 @@
+using Microsoft.Extensions.Options;
+using Newtonsoft.Json;
+using System.Net.Http;
+using System.Text;
+using TacoTuesday.Models;
+
 public interface IAuthTokenService{
     string EnsureAuthToken();
 }
 
 public class AuthTokenService : IAuthTokenService {
+    private readonly AppSettings _appSettings;
+
+    public AuthTokenService(IOptions<AppSettings> appSettingsOptions)
+    {
+        _appSettings = appSettingsOptions.Value;
+    }
+
     public string EnsureAuthToken() {
         //TODO: store the token somewhere so we don't get it over and over again
-        //TODO: store the private key somewhere safe that doesn't get checked into source control.
-        string grant_type = "client_credentials";
-        string client_id = "GuU_Q6NzJ9o8KbYJ71Q7Zw";
-        string client_secret = "super secret key";
-         //TODO: call https://api.yelp.com/oauth2/token
-         
-        return "foo";
+
+        var authTokenRequest = new AuthTokenRequest {
+            GrantType = "client_credentials",
+            ClientId = _appSettings.YelpAppId,
+            ClientSecret = _appSettings.YelpAppSecret
+        };
+
+        //TODO: call https://api.yelp.com/oauth2/token
+        var client = new HttpClient();
+        var content = new StringContent(JsonConvert.SerializeObject(authTokenRequest), Encoding.UTF8, "application/json");
+        var result = client.PostAsync("https://api.yelp.com/oauth2/token", content).Result;
+        var body = result.Content.ReadAsStringAsync().Result;
+
+        return body;
     }
 }

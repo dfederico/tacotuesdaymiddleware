@@ -6,11 +6,13 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using TacoTuesday.Services;
 using WebApplication.Services;
+using TacoTuesday.Models;
+using Microsoft.Extensions.Options;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace WebApplication
 {
@@ -26,10 +28,11 @@ namespace WebApplication
             if (env.IsDevelopment())
             {
                 // For more details on using the user secret store see https://go.microsoft.com/fwlink/?LinkID=532709
-                builder.AddUserSecrets();
+                builder.AddUserSecrets<AppSettings>();
             }
 
             builder.AddEnvironmentVariables();
+            
             Configuration = builder.Build();
         }
 
@@ -38,6 +41,10 @@ namespace WebApplication
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            // Adds services required for using options.
+            services.AddOptions();
+            services.Configure<AppSettings>(Configuration);
+
             // Add framework services.
             services.AddMvc();
 
