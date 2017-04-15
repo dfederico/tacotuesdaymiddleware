@@ -4,7 +4,7 @@ namespace TacoTuesday.Services
 {
     public interface ILocationService
     {
-        List<Location> Get(decimal logitude, decimal latitude);
+        List<Location> Get(decimal longitude, decimal latitude);
     }
 
     public class LocationService : ILocationService
@@ -13,7 +13,7 @@ namespace TacoTuesday.Services
         public LocationService(IAuthTokenService authTokenService){
             _authTokenService = authTokenService;
         }
-        public List<Location> Get(decimal logitude, decimal latitude)
+        public List<Location> Get(decimal longitude, decimal latitude)
         {
             //1. Ensusre that we have an access token
             var token = _authTokenService.EnsureAuthToken();

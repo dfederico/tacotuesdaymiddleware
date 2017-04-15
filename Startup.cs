@@ -43,7 +43,7 @@ namespace WebApplication
         {
             // Adds services required for using options.
             services.AddOptions();
-            services.Configure<AppSettings>(Configuration);
+            services.Configure<AppSettings>(Configuration.GetSection("AppSettings"));
 
             // Add framework services.
             services.AddMvc();
