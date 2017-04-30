@@ -233,3 +233,15 @@ _Pvt_Extensions
 # FAKE - F# Make
 .fake/
 wwwroot/lib/
+
+#NativeScript
+npm-debug.log
+.DS_Store
+*.js.map
+app/**/*.js
+hooks/
+lib/
+node_modules/
+platforms/
+tmp/
+typings/
