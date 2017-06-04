@@ -1,0 +1,185 @@
+{
+    "businesses": [
+        {
+            "id": "taco-johns-aberdeen",
+            "name": "Taco John's",
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/ARIMDeZsMoOA8I5kkYvxHQ/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/taco-johns-aberdeen?adjust_creative=SK9Z8MdckVuPWWJ1mL2G7g&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=SK9Z8MdckVuPWWJ1mL2G7g",
+            "review_count": 6,
+            "categories": [
+                {
+                    "alias": "mexican",
+                    "title": "Mexican"
+                },
+                {
+                    "alias": "hotdogs",
+                    "title": "Fast Food"
+                }
+            ],
+            "rating": 4.0,
+            "coordinates": {
+                "latitude": 45.4589529218575,
+                "longitude": -98.4554278850555
+            },
+            "transactions": [],
+            "price": "$",
+            "location": {
+                "address1": "2300 SE 6th Ave",
+                "address2": "",
+                "address3": "",
+                "city": "Aberdeen",
+                "zip_code": "57401",
+                "country": "US",
+                "state": "SD",
+                "display_address": [
+                    "2300 SE 6th Ave",
+                    "Aberdeen, SD 57401"
+                ]
+            },
+            "phone": "+16052252533",
+            "display_phone": "(605) 225-2533",
+            "distance": 82969.56071481999
+        },
+        {
+            "id": "mazatlan-mexican-restaurant-aberdeen",
+            "name": "Mazatlan Mexican Restaurant",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/TkzbL0Hir58DN_lYaZefwg/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/mazatlan-mexican-restaurant-aberdeen?adjust_creative=SK9Z8MdckVuPWWJ1mL2G7g&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=SK9Z8MdckVuPWWJ1mL2G7g",
+            "review_count": 12,
+            "categories": [
+                {
+                    "alias": "steak",
+                    "title": "Steakhouses"
+                },
+                {
+                    "alias": "tacos",
+                    "title": "Tacos"
+                },
+                {
+                    "alias": "bars",
+                    "title": "Bars"
+                }
+            ],
+            "rating": 4.0,
+            "coordinates": {
+                "latitude": 45.4649723321199,
+                "longitude": -98.4894657880068
+            },
+            "transactions": [],
+            "price": "$$",
+            "location": {
+                "address1": "1 S 1st St",
+                "address2": "",
+                "address3": "",
+                "city": "Aberdeen",
+                "zip_code": "57401",
+                "country": "US",
+                "state": "SD",
+                "display_address": [
+                    "1 S 1st St",
+                    "Aberdeen, SD 57401"
+                ]
+            },
+            "phone": "+16052291222",
+            "display_phone": "(605) 229-1222",
+            "distance": 81400.6907878
+        },
+        {
+            "id": "pounders-pub-and-grub-aberdeen",
+            "name": "Pounders Pub & Grub",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/X4k7ctL8vmRWKG71cjqFag/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/pounders-pub-and-grub-aberdeen?adjust_creative=SK9Z8MdckVuPWWJ1mL2G7g&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=SK9Z8MdckVuPWWJ1mL2G7g",
+            "review_count": 19,
+            "categories": [
+                {
+                    "alias": "sportsbars",
+                    "title": "Sports Bars"
+                },
+                {
+                    "alias": "tradamerican",
+                    "title": "American (Traditional)"
+                }
+            ],
+            "rating": 4.0,
+            "coordinates": {
+                "latitude": 45.4589362139415,
+                "longitude": -98.462848554637
+            },
+            "transactions": [
+                "pickup"
+            ],
+            "price": "$$",
+            "location": {
+                "address1": "1702 6th Ave SE",
+                "address2": "",
+                "address3": "",
+                "city": "Aberdeen",
+                "zip_code": "57401",
+                "country": "US",
+                "state": "SD",
+                "display_address": [
+                    "1702 6th Ave SE",
+                    "Aberdeen, SD 57401"
+                ]
+            },
+            "phone": "+16057252337",
+            "display_phone": "(605) 725-2337",
+            "distance": 82525.13020844
+        },
+        {
+            "id": "palm-garden-cafe-and-chocolate-shoppe-aberdeen",
+            "name": "Palm Garden Cafe & Chocolate Shoppe",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/Ujk6nsPMg9gQedDEcTchAA/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/palm-garden-cafe-and-chocolate-shoppe-aberdeen?adjust_creative=SK9Z8MdckVuPWWJ1mL2G7g&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=SK9Z8MdckVuPWWJ1mL2G7g",
+            "review_count": 29,
+            "categories": [
+                {
+                    "alias": "cafes",
+                    "title": "Cafes"
+                },
+                {
+                    "alias": "sandwiches",
+                    "title": "Sandwiches"
+                },
+                {
+                    "alias": "chocolate",
+                    "title": "Chocolatiers & Shops"
+                }
+            ],
+            "rating": 4.0,
+            "coordinates": {
+                "latitude": 45.4589179158211,
+                "longitude": -98.4924222528934
+            },
+            "transactions": [],
+            "price": "$$",
+            "location": {
+                "address1": "602 S 3rd St",
+                "address2": null,
+                "address3": null,
+                "city": "Aberdeen",
+                "zip_code": "57401",
+                "country": "US",
+                "state": "SD",
+                "display_address": [
+                    "602 S 3rd St",
+                    "Aberdeen, SD 57401"
+                ]
+            },
+            "phone": "+16057254240",
+            "display_phone": "(605) 725-4240",
+            "distance": 80761.8632748
+        }
+    ],
+    "total": 4,
+    "region": {
+        "center": {
+            "latitude": 45.20085267035253,
+            "longitude": -98.87467861999772
+        }
+    }
+}
