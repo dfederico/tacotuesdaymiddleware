@@ -10,6 +10,7 @@
     <UserSecretsId>aspnet-WebApplication-0799fe3e-6eaf-4c5f-b40e-7c6bfd5dfa9a</UserSecretsId>
     <RuntimeFrameworkVersion>1.1.1</RuntimeFrameworkVersion>
     <PackageTargetFallback>$(PackageTargetFallback);dotnet5.6;dnxcore50;portable-net45+win8</PackageTargetFallback>
+    <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
   </PropertyGroup>
 
   <ItemGroup>
