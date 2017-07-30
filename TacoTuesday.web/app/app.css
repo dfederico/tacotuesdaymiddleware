@@ -1,1 +1,6 @@
 @import "~/nativescript-theme-core/css/lime.css";
+Button, TextField {
+  margin-left: 16;
+  margin-right: 16;
+  margin-bottom: 10;
+}
